@@ -39,6 +39,11 @@ body{
 }
 
 
+.container .card:hover:before{
+    bottom: 0;
+}
+
+
 .container .card:nth-child(1):before{
     background-color: #ff56ac;
 }
@@ -47,4 +52,43 @@ body{
 }
 .container .card:nth-child(3):before{
     background-color: #e33cff;
+}
+
+
+.container .card div{
+    position: relative;
+    z-index: 2;
+}
+
+
+.container .card div h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    transition: 0.5s;
+    color: #777;
+}
+
+.container .card div p{
+    font-size: 18px;
+    transition: 0.5s;
+    color: #777;
+}
+
+.container .card div a{
+    margin-top: 20px;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: #fff;
+    color: #777;
+    padding: 6px 10px;
+    font-weight: 600;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.container .card:hover div h2,
+.container .card:hover div p{
+    color: #fff;
 }
