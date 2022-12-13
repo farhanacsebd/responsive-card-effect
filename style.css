@@ -4,23 +4,20 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .container{
-    width: 1050px;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 25px;
+    
 }
 
 .container .card{
     position: relative;
     width: 320px;
+    margin-bottom: 5px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
     overflow: hidden;
